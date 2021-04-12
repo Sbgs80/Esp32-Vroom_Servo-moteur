@@ -13,3 +13,16 @@ Enfin, nous procèderons à la modification du servo-moteur pour obtenir une rot
 3. Une carte [ESP32 Vroom DevKit](https://www.amazon.fr/gp/product/B08H2F3N9B/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) (9€99)
 4. Câbles [Dupont Breadboard](https://www.amazon.fr/gp/product/B01JD5WCG2/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1) (7€99) pour branchement du servo
 5. Un lot de 2 servo modèle [MG996R](https://www.amazon.fr/gp/product/B07XC6VBSZ/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1) couple 12Kg (12€)
+
+<ins>EspHome & HomeAssistant :</ins>
+><em>Je n'ai jamais réussi à faire fonctionner EspHome correctement sur HomeAssistant, plantage systèmatique au niveau de la compilation du programme à injecter dans l'ESP32 malgré une tentative d'utilisation de versions stable, bêta... du coup je me suis tourné vers une version utilisable depuis un pc Linux (ubuntu) dans une VM sous virtualBox. Un excellent tutoriel est accessible ici : [Tutoriel EspHome Ubuntu](https://www.programmersought.com/article/46824697468/).</em>
+>> Commandes installation EspHome sous terminal Ubuntu :
+```
+1.sudo apt install python3.8
+2.sudo apt install python3-pip
+3.sudo pip3 install esphome -i https://pypi.tuna.tsinghua.edu.cn/simple
+4.sudo esphome config/ dashboard
+5. Visit http://ip:6052
+Note that esp8266 should be plugged into the Linux running system, not on the host that opens the webpage.
+```
+
