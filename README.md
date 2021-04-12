@@ -77,13 +77,13 @@ esphome:
   board: nodemcu-32s
 
 wifi:
-  ssid: "Freebox-SBGS"
-  password: "N@than010712"
+  ssid: "Freebox-XXX"
+  password: "MonMotdeP@sse"
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Vroom Fallback Hotspot"
-    password: "v811m5eQoG0F"
+    password: "wxJckgcAxh8j"
 
 captive_portal:
 
@@ -101,16 +101,16 @@ api:
             level: !lambda 'return level / 100.0;'
 
 output:
-  - platform: ledc
-    id: gpio_18
-    pin: GPIO18
+  - platform: ledc # Ici, s'agissant d'un esp32 Vroom il faut utiliser la platform *ledc* et non XXX comme pour un Wemos
+    id: gpio_18 # GPIO utilisé pour envoyer la commande vers le servo (ici GPIO18)
+    pin: GPIO18 # GPIO utilisé pour envoyé la commande vers le servo (ici GPIO18)
     frequency: 50 Hz
 
 servo:
   - id: my_servo
-    output: gpio_18
+    output: gpio_18 # GPIO utilisé (ici le 18)
 ota:
-  password: "Bourgeois80"
+  password: "XXXXXXXX"
  ```
 
 ![Capture_vroom](https://user-images.githubusercontent.com/64536764/114370114-65712d80-9b7f-11eb-9621-c058902d5e31.PNG)
