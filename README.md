@@ -113,6 +113,6 @@ ota:
   password: "XXXXXXXX"
  ```
 Une fois le code sauvegardé, cliquer que le bouton **VALIDATE**. Si tout est correct vous avez une petite notification en haut à droite indiquant **wroom.yaml is valid**.
-Avant de fermer cette page vous pouvez l'uploader vers votre ESP32 en cliquant sur le bouton **UPLOAD**. Avant de lancer **L'UPLOAD** laisser votre doigt appuyé sur le boutton **BOOT** et garder le appuyé jusqu'a la fin sinon ca ne fonctionnera pas 🤦 (je me suis fait avoir)
+Avant de fermer cette page vous pouvez l'uploader vers votre ESP32 en cliquant sur le bouton **UPLOAD**. Avant de lancer **L'UPLOAD** laisser votre doigt appuyé sur le boutton **BOOT** (en bas à droite) et garder le appuyé jusqu'a la fin sinon ca ne fonctionnera pas 🤦.
 
 ![Capture_vroom](https://user-images.githubusercontent.com/64536764/114370114-65712d80-9b7f-11eb-9621-c058902d5e31.PNG)
