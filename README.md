@@ -68,7 +68,7 @@ ota:
 ```
 <ins>Modification du code de l'ESP32 pour intéragir avec un servomoteur :</ins>
 
-Nous allons maintenant pouvoir modifier le code afin que l'ESP32 puisse intéragir avec le servomoteur. J'ai arpenter pas mal de tutoriel et malheureusement tous étaient axés sur l'utilisation d'un *Wemos Mini* et non utilisable avec un **ESP32 vroom**. Les modifications sont minimalistes certes, mais pas évidentes à trouver lorsque l'on débute. Voici le code à ajouter avec quelques explications :
+Nous allons maintenant pouvoir modifier le code afin que l'ESP32 puisse intéragir avec le servomoteur. J'ai arpenter pas mal de tutoriel et malheureusement tous étaient axés sur l'utilisation d'un *Wemos Mini* et non utilisable avec un **ESP32 vroom**. Les modifications sont minimalistes certes, mais pas évidentes à trouver lorsque l'on débute. Voici le code à ajouter/modifier avec quelques explications :
 
 ```YAML
 esphome:
