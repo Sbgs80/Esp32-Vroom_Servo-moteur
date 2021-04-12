@@ -14,7 +14,7 @@ Enfin, nous procèderons à la modification du servo-moteur pour obtenir une rot
 4. Câbles [Dupont Breadboard](https://www.amazon.fr/gp/product/B01JD5WCG2/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1) (7€99) pour branchement du servo
 5. Un lot de 2 servo modèle [MG996R](https://www.amazon.fr/gp/product/B07XC6VBSZ/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1) couple 12Kg (12€)
 
-<ins>EspHome & ~~HomeAssistant~~ Ubuntu :</ins>
+<ins>ESPHome & ~~HomeAssistant~~ Ubuntu :</ins>
 ><em>Je n'ai jamais réussi à faire fonctionner EspHome correctement sur HomeAssistant, plantage systèmatique au niveau de la compilation du programme à injecter dans l'ESP32 malgré une tentative d'utilisation de versions stable, bêta... Du coup je me suis tourné vers une version utilisable depuis un pc Linux (ubuntu) dans une VM sous virtualBox. Un excellent tutoriel est accessible ici : [Tutoriel EspHome Ubuntu](https://www.programmersought.com/article/46824697468/).</em>
 >> Commandes installation EspHome sous terminal Ubuntu :
 ```
@@ -25,10 +25,18 @@ Enfin, nous procèderons à la modification du servo-moteur pour obtenir une rot
 5. Visit http://ip:6052
 Note that esp8266 should be plugged into the Linux running system, not on the host that opens the webpage.
 ```
+<ins>Configuration ESP32 Vroom dans ESPHome :</ins>
+
 Une fois l'installation terminée, rendez-vous sur votre navigateur et tapez l'adresse locale ***127.0.0.1:6052*** pour accéder à l'interface ESPHome:
 
 <p align="center">
   <img width="727" height="572" src="https://user-images.githubusercontent.com/64536764/114371132-7bcbb900-9b80-11eb-9a3c-3082c76a56a3.PNG">
+</p>
+
+Cliquer ensuite sur l'icone **+** en bas à droite, puis **BEGIN**. Dans Node Name mettez le nom que vous souhaitez donner (pour mon exemple *vroom*). Dans **Device Type** sélectionner **ESP32** **NodeMCU-32S**. Dans les paramètres WIFI entrez le **SSID** et le **mot de passe** de votre réseau WIFI. Vous pouvez définir un mot de passe OTA popur pemettre les mises à jour du programme via WIFI histoire déviter de repasser en mode filaire après... Pour terminer cliquer sur **SUBMIT**. Votre premier noeud apparaît sur la page !
+
+<p align="center">
+  <img width="727" height="572" src="https://user-images.githubusercontent.com/64536764/114374241-b97e1100-9b83-11eb-8c7c-678f01d47fc0.PNG">
 </p>
 
 
