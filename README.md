@@ -121,4 +121,5 @@ Vous pouvez maintenant connecter votre servomoteur à la carte ESP.
 1. Le fil rouge sur le PIN 5V car l'ESP est alimenté chez moi par un cable mirco-usb2
 2. Le fil marron (GND) à brancher sur le PIN GND à côté du PIN 5V
 3. Le fil orange (signal) à brancher sur le PIN GPIO18.
+
 ![telecommande_servomoteur](https://user-images.githubusercontent.com/64536764/114406466-daf0f400-9ba7-11eb-8e68-24247a0eaff6.jpg)
