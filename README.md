@@ -36,9 +36,35 @@ Une fois l'installation terminée, rendez-vous sur votre navigateur et tapez l'a
 Cliquer ensuite sur l'icone **+** en bas à droite, puis **BEGIN**. Dans Node Name mettez le nom que vous souhaitez donner (pour mon exemple *vroom*). Dans **Device Type** sélectionner **ESP32** **NodeMCU-32S**. Dans les paramètres WIFI entrez le **SSID** et le **mot de passe** de votre réseau WIFI. Vous pouvez définir un mot de passe OTA popur pemettre les mises à jour du programme via WIFI histoire déviter de repasser en mode filaire après... Pour terminer cliquer sur **SUBMIT**. Votre premier noeud apparaît sur la page !
 
 <p align="center">
-  <img width="727" height="572" src="https://user-images.githubusercontent.com/64536764/114374241-b97e1100-9b83-11eb-8c7c-678f01d47fc0.PNG">
+  <img width="1816" height="325" src="https://user-images.githubusercontent.com/64536764/114374241-b97e1100-9b83-11eb-8c7c-678f01d47fc0.PNG">
 </p>
 
+Cliquer ensuite sur **EDIT** pour afficher le code généré suite à la création de votre premier noeud. Pour l'instant l'ESP32 ne pourra que se connecter à votre réseau WIFI, seuls ces paramètres sont configurés...  vous obtenez un code qui doit ressembler à cela :
 
+```YAML
+esphome:
+  name: wroom
+  platform: ESP32
+  board: nodemcu-32s
+
+wifi:
+  ssid: "Freebox-XXX" # Nom de votre SSID
+  password: "VotreMotdeP@sse" # Mot de passe WIFI
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Wroom Fallback Hotspot"
+    password: "wxJckgcAxh8j"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+```
 
 ![Capture_vroom](https://user-images.githubusercontent.com/64536764/114370114-65712d80-9b7f-11eb-9621-c058902d5e31.PNG)
