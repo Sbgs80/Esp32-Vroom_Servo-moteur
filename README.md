@@ -14,8 +14,8 @@ Enfin, nous procèderons à la modification du servo-moteur pour obtenir une rot
 4. Câbles [Dupont Breadboard](https://www.amazon.fr/gp/product/B01JD5WCG2/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1) (7€99) pour branchement du servo
 5. Un lot de 2 servo modèle [MG996R](https://www.amazon.fr/gp/product/B07XC6VBSZ/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1) couple 12Kg (12€)
 
-<ins>EspHome & HomeAssistant :</ins>
-><em>Je n'ai jamais réussi à faire fonctionner EspHome correctement sur HomeAssistant, plantage systèmatique au niveau de la compilation du programme à injecter dans l'ESP32 malgré une tentative d'utilisation de versions stable, bêta... du coup je me suis tourné vers une version utilisable depuis un pc Linux (ubuntu) dans une VM sous virtualBox. Un excellent tutoriel est accessible ici : [Tutoriel EspHome Ubuntu](https://www.programmersought.com/article/46824697468/).</em>
+<ins>EspHome & ~~HomeAssistant~~ Ubuntu :</ins>
+><em>Je n'ai jamais réussi à faire fonctionner EspHome correctement sur HomeAssistant, plantage systèmatique au niveau de la compilation du programme à injecter dans l'ESP32 malgré une tentative d'utilisation de versions stable, bêta... Du coup je me suis tourné vers une version utilisable depuis un pc Linux (ubuntu) dans une VM sous virtualBox. Un excellent tutoriel est accessible ici : [Tutoriel EspHome Ubuntu](https://www.programmersought.com/article/46824697468/).</em>
 >> Commandes installation EspHome sous terminal Ubuntu :
 ```
 1.sudo apt install python3.8
@@ -26,3 +26,4 @@ Enfin, nous procèderons à la modification du servo-moteur pour obtenir une rot
 Note that esp8266 should be plugged into the Linux running system, not on the host that opens the webpage.
 ```
 
+![Capture_vroom](https://user-images.githubusercontent.com/64536764/114370114-65712d80-9b7f-11eb-9621-c058902d5e31.PNG)
