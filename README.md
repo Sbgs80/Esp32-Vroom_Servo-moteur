@@ -25,5 +25,9 @@ Enfin, nous procèderons à la modification du servo-moteur pour obtenir une rot
 5. Visit http://ip:6052
 Note that esp8266 should be plugged into the Linux running system, not on the host that opens the webpage.
 ```
+Une fois l'installation terminée depuis la VM Ubuntu, rendez-vous sur votre navigateur et tapez l'adresse locale ***127.0.0.1:6052*** pour accéder à l'interface ESPHome:
+
+![esph-1](https://user-images.githubusercontent.com/64536764/114371132-7bcbb900-9b80-11eb-9a3c-3082c76a56a3.PNG)
+
 
 ![Capture_vroom](https://user-images.githubusercontent.com/64536764/114370114-65712d80-9b7f-11eb-9621-c058902d5e31.PNG)
