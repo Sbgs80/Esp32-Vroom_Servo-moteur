@@ -1,3 +1,7 @@
-# EspHome: ESP32 Vroom - Servo-moteur
+Voici un petit tutoriel concernant la configuration d'un 'Esp32 Vroom dev kit' avec EspHome et intégration dans HomeAssistant.
+Nous verrons également comment brancher un servo-moteur et l'intégrer sous HomeAssistant.
+Enfin, nous procèderons à la modification du servo-moteur pour obtenir une rotation continue.
 
-<u>Configuration d'un ESP32 Vroom avec Esphome sous HomeAssistant avec modification d'un servomoteur en rotation continue :</u>
+# Configuration Esp32 Vroom avec EspHome
+
+<ins>Configuration d'un ESP32 Vroom avec Esphome sous HomeAssistant avec modification d'un servomoteur en rotation continue :</ins>
