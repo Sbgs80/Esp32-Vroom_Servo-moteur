@@ -101,7 +101,7 @@ api:
             level: !lambda 'return level / 100.0;'
 
 output:
-  - platform: ledc # Ici, s'agissant d'un esp32 Vroom il faut utiliser la platform *ledc* 
+  - platform: ledc # Pas de référence à pwt_out concernant la plateforme
     id: gpio_18 # GPIO utilisé pour envoyer la commande vers le servo (ici GPIO18)
     pin: GPIO18 # GPIO utilisé pour envoyé la commande vers le servo (ici GPIO18)
     frequency: 50 Hz
@@ -113,7 +113,7 @@ ota:
   password: "XXXXXXXX"
  ```
 Une fois le code sauvegardé, cliquer que le bouton **VALIDATE**. Si tout est correct vous avez une petite notification en haut à droite indiquant **wroom.yaml is valid**.
-Avant de fermer cette page vous pouvez l'uploader vers votre ESP32 en cliquant sur le bouton **UPLOAD**. Avant de lancer **L'UPLOAD** laisser votre doigt appuyé sur le boutton **BOOT** (en bas à droite) et <ins>garder le appuyé jusqu'a la fin</ins> sinon ca ne fonctionnera pas 🤦.
+Avant de fermer cette page vous pouvez l'uploader vers votre ESP32 en cliquant sur le bouton **UPLOAD**. Avant de lancer **L'UPLOAD** laisser votre doigt appuyé sur le boutton **BOOT** (en bas à droite) et <ins>gardez le appuyé jusqu'a la fin</ins> sinon ca ne fonctionnera pas 🤦.
 
 ![Capture_vroom](https://user-images.githubusercontent.com/64536764/114370114-65712d80-9b7f-11eb-9621-c058902d5e31.PNG)
 
