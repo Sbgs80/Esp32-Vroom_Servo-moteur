@@ -2,7 +2,7 @@
 
 <em>Voici un petit tutoriel concernant la configuration d'un 'Esp32 Vroom dev kit' avec EspHome et intégration dans HomeAssistant.
 Nous verrons également comment brancher un servo-moteur et l'intégrer sous HomeAssistant.
-Enfin, nous procèderons à la modification du servo-moteur pour obtenir une rotation continue.</em>
+Enfin, nous procèderons à la modification du servo-moteur pour obtenir une rotation continue. L'objetcif étant de pouvoir commander le servo depuis HomeAssistant, de le faire tourner dans un sens puis dans l'autre et de pouvoir bien évidemment l'arrêter.</em>
 
 
 
@@ -66,5 +66,51 @@ api:
 
 ota:
 ```
+<ins>Modification du code de l'ESP32 pour intéragir avec un servomoteur :</ins>
+
+Nous allons maintenant pouvoir modifier le code afin que l'ESP32 puisse intéragir avec le servomoteur. J'ai arpenter pas mal de tutoriel et malheureusement tous étaient axés sur l'utilisation d'un *Wemos Mini* et non utilisable avec un **ESP32 vroom**. Les modifications sont minimalistes certes, mais pas évidentes à trouver lorsque l'on débute. Voici le code à ajouter avec quelques explications :
+
+```YAML
+esphome:
+  name: vroom
+  platform: ESP32
+  board: nodemcu-32s
+
+wifi:
+  ssid: "Freebox-SBGS"
+  password: "N@than010712"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Vroom Fallback Hotspot"
+    password: "v811m5eQoG0F"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+api:
+  services:
+    - service: control_servo
+      variables:
+        level: float
+      then:
+        - servo.write:
+            id: my_servo
+            level: !lambda 'return level / 100.0;'
+
+output:
+  - platform: ledc
+    id: gpio_18
+    pin: GPIO18
+    frequency: 50 Hz
+
+servo:
+  - id: my_servo
+    output: gpio_18
+ota:
+  password: "Bourgeois80"
+ ```
 
 ![Capture_vroom](https://user-images.githubusercontent.com/64536764/114370114-65712d80-9b7f-11eb-9621-c058902d5e31.PNG)
