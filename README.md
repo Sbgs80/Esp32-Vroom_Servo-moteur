@@ -116,3 +116,9 @@ Une fois le code sauvegardé, cliquer que le bouton **VALIDATE**. Si tout est co
 Avant de fermer cette page vous pouvez l'uploader vers votre ESP32 en cliquant sur le bouton **UPLOAD**. Avant de lancer **L'UPLOAD** laisser votre doigt appuyé sur le boutton **BOOT** (en bas à droite) et <ins>garder le appuyé jusqu'a la fin</ins> sinon ca ne fonctionnera pas 🤦.
 
 ![Capture_vroom](https://user-images.githubusercontent.com/64536764/114370114-65712d80-9b7f-11eb-9621-c058902d5e31.PNG)
+
+Vous pouvez maintenant connecter votre servomoteur à la carte ESP. 
+1. Le fil rouge sur le PIN 5V car l'ESP est alimenté chez moi par un cable mirco-usb2
+2. Le fil marron (GND) à brancher sur le PIN GND à côté du PIN 5V
+3. Le fil orange (signal) à brancher sur le PIN GPIO18.
+![telecommande_servomoteur](https://user-images.githubusercontent.com/64536764/114406466-daf0f400-9ba7-11eb-8e68-24247a0eaff6.jpg)
