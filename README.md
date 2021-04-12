@@ -101,7 +101,7 @@ api:
             level: !lambda 'return level / 100.0;'
 
 output:
-  - platform: ledc # Ici, s'agissant d'un esp32 Vroom il faut utiliser la platform *ledc* et non XXX comme pour un Wemos
+  - platform: ledc # Ici, s'agissant d'un esp32 Vroom il faut utiliser la platform *ledc* 
     id: gpio_18 # GPIO utilisé pour envoyer la commande vers le servo (ici GPIO18)
     pin: GPIO18 # GPIO utilisé pour envoyé la commande vers le servo (ici GPIO18)
     frequency: 50 Hz
